@@ -1,0 +1,15 @@
+<security>
+    <constraint>
+        <url-pattern>/addToCart</url-pattern>
+        <url-pattern>/cart</url-pattern>
+        <url-pattern>/clearCart</url-pattern>
+        <url-pattern>/deleteFromCart</url-pattern>
+        <url-pattern>/minusCountItem</url-pattern>
+        <url-pattern>/plusCountItem</url-pattern>
+        <url-pattern>/order</url-pattern>
+        <role>admin</role>
+    </constraint>
+    <constraint>
+        <role>user</role>
+    </constraint>
+</security>

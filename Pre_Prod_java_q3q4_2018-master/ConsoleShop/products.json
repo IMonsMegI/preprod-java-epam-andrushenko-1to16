@@ -1,0 +1,73 @@
+[ [ "com.epam.AndriushchenkoMykhailo.entities.products.TV4K", {
+  "id" : 0,
+  "cost" : 18000,
+  "model" : "Samsung Ultra 4k",
+  "power" : 115,
+  "diagonal" : 43.0,
+  "color" : true,
+  "height" : 3840.0,
+  "width" : 9.8,
+  "length" : 2160.0,
+  "countOfPixel" : 8294400,
+  "aspectRatio" : "16:10"
+} ], [ "com.epam.AndriushchenkoMykhailo.entities.products.TV4K", {
+  "id" : 1,
+  "cost" : 25000,
+  "model" : "LG Ultra vision",
+  "power" : 120,
+  "diagonal" : 40.0,
+  "color" : true,
+  "height" : 3820.0,
+  "width" : 9.1,
+  "length" : 2240.0,
+  "countOfPixel" : 8556800,
+  "aspectRatio" : "16:12"
+} ], [ "com.epam.AndriushchenkoMykhailo.entities.products.SmartTV", {
+  "id" : 2,
+  "cost" : 18000,
+  "model" : "Philips smart vision",
+  "power" : 118,
+  "diagonal" : 42.0,
+  "color" : true,
+  "height" : 3840.0,
+  "width" : 9.5,
+  "length" : 2160.0,
+  "smartTV" : true,
+  "operatingSystem" : "16:10"
+} ], [ "com.epam.AndriushchenkoMykhailo.entities.products.TV4K", {
+  "id" : 3,
+  "cost" : 20000,
+  "model" : "Samsung UltraSuper 4k",
+  "power" : 125,
+  "diagonal" : 43.0,
+  "color" : true,
+  "height" : 3840.0,
+  "width" : 9.8,
+  "length" : 2160.0,
+  "countOfPixel" : 8294400,
+  "aspectRatio" : "16:10"
+} ], [ "com.epam.AndriushchenkoMykhailo.entities.products.TV4K", {
+  "id" : 4,
+  "cost" : 28000,
+  "model" : "LG UltraSuper vision",
+  "power" : 130,
+  "diagonal" : 40.0,
+  "color" : true,
+  "height" : 3820.0,
+  "width" : 9.1,
+  "length" : 2240.0,
+  "countOfPixel" : 8556800,
+  "aspectRatio" : "16:12"
+} ], [ "com.epam.AndriushchenkoMykhailo.entities.products.SmartTV", {
+  "id" : 5,
+  "cost" : 15000,
+  "model" : "Philips Super Smart vision",
+  "power" : 112,
+  "diagonal" : 42.0,
+  "color" : true,
+  "height" : 3840.0,
+  "width" : 9.5,
+  "length" : 2160.0,
+  "smartTV" : true,
+  "operatingSystem" : "16:10"
+} ] ]

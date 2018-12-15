@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         id="WebApp_ID" version="3.1">
+
+    <resource-ref>
+        <description>DB Connection</description>
+        <res-ref-name>jdbc/internettvshop</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+    </resource-ref>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!--- session   context-cookie   context-hidden -->
+    <context-param>
+        <param-name>placeOfCaptchaIdSaving</param-name>
+        <param-value>session</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>applicationLocales</param-name>
+        <param-value>ru en</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>defaultLocale</param-name>
+        <param-value>en</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>savingCookieTime</param-name>
+        <param-value>1800</param-value>
+    </context-param>
+
+    <listener>
+        <listener-class>com.epam.andriushchenko.listeners.ContextListener</listener-class>
+    </listener>
+
+    <filter>
+        <filter-name>LocaleFilter</filter-name>
+        <filter-class>com.epam.andriushchenko.filters.LocaleFilter</filter-class>
+        <init-param>
+            <param-name>placeOfSavingLocale</param-name>
+            <!--session   cookie-->
+            <param-value>session</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>LocaleFilter</filter-name>
+        <url-pattern>*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>EncodingFilter</filter-name>
+        <filter-class>com.epam.andriushchenko.filters.EncodingFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>EncodingFilter</filter-name>
+        <url-pattern>*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>OffCacheFilter</filter-name>
+        <filter-class>com.epam.andriushchenko.filters.OffCacheFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>OffCacheFilter</filter-name>
+        <url-pattern>*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>GzipFilter</filter-name>
+        <filter-class>com.epam.andriushchenko.filters.GzipFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>GzipFilter</filter-name>
+        <url-pattern>*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>SecurityFilter</filter-name>
+        <filter-class>com.epam.andriushchenko.filters.SecurityFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>SecurityFilter</filter-name>
+        <url-pattern>*</url-pattern>
+    </filter-mapping>
+
+</web-app>

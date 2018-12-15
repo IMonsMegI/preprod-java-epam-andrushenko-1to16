@@ -1,0 +1,178 @@
+#topMenu {
+    border: 2px solid #dcabe0;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 16px;
+    padding: 0px;
+    text-decoration: none;
+    margin: 0px 520px 0px 520px;
+    background-color: #c05f53;
+}
+
+body {
+    background-image: url(../images/body-bg.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.container {
+    margin: 100px auto 0;
+    position: relative;
+    text-align: left;
+    width: 1000px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* header section */
+header {
+    border-bottom: 2px solid #e0e0e0;
+    position: relative;
+    z-index: 10;
+}
+
+#submenu {
+    background: linear-gradient(#44f0ff, #f6f6f6);
+    border: 2px solid #96a4e0;
+    height: 35px;
+    margin: 20px 40px;
+}
+
+#submenu ul {
+    margin: 0;
+    padding: 0;
+}
+
+#submenu li {
+    float: left;
+    line-height: 1em;
+    list-style: none outside none;
+    margin: 0;
+    position: relative;
+}
+
+#submenu li a {
+    border-right: 1px solid #E0E0E0;
+    color: #383838;
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 14px;
+    margin: 0 0 0 0px;
+    padding: 9px 18px 11px 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* main section */
+#main {
+    background-color: #fff;
+    padding: 20px 20px 20px 20px;
+}
+
+#main h1 {
+    background: linear-gradient(#ffad6b, #F6F6F6); /* the standard */
+    border-bottom: 2px solid #E0E0E0;
+    color: #3C3C3C;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 15px;
+    padding: 11px 0 12px 20px;
+    text-transform: uppercase;
+}
+
+#content {
+    overflow: scroll; /* Добавляем полосы прокрутки */
+    width: 900px; /* Ширина блока */
+    height: 600px;
+}
+
+#content #right {
+    margin-left: 0;
+    width: 30%;
+}
+
+#content ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+
+#content #left ul li {
+    float: left;
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+#content #left ul li:hover {
+    display: block;
+    background-color: #fbe6c8;
+}
+
+#content #left ul li .info a:first-child {
+    color: #2e4098;
+    float: left;
+}
+
+#content #left .img {
+    position: relative;
+    display: block;
+    float: left;
+    padding: 5px 5px 5px 5px;
+}
+
+.form-page {
+    width: 300px;
+    padding: 5% 0 0;
+    margin: auto;
+}
+
+.form {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.form button:hover, .form button:active, .form button:focus {
+    background: #43A047;
+}
+
+.error input.error textarea {
+    border: 1px solid red;
+}
+
+.error {
+    color: red;
+}

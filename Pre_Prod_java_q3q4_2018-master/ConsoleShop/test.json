@@ -1,0 +1,13 @@
+[ [ "com.epam.AndriushchenkoMykhailo.entities.products.TV4K", {
+  "id" : 0,
+  "cost" : 18000,
+  "model" : "Samsung Ultra 4k",
+  "power" : 115,
+  "diagonal" : 43.0,
+  "color" : true,
+  "height" : 3840.0,
+  "width" : 9.8,
+  "length" : 2160.0,
+  "countOfPixel" : 8294400,
+  "aspectRatio" : "16:10"
+} ] ]
